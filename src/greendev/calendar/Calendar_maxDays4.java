@@ -12,6 +12,8 @@ public class Calendar_maxDays4 {
 	public static void main(String[] args) {
 		Scanner scanner1 = new Scanner(System.in);
 		Calendar_maxDays4 cal = new Calendar_maxDays4();
+		String PROMPT = "Cal> ";
+		
 		System.out.println("반복 횟수를 입력하세요");
 		int times = scanner1.nextInt();
 					
@@ -19,9 +21,12 @@ public class Calendar_maxDays4 {
 		for(i=0; i < times; i++) {
 			Scanner scanner2 = new Scanner(System.in);
 			System.out.println("달을 입력하세요");
+			System.out.println(PROMPT);
 			int month = scanner2.nextInt();
 			System.out.printf("%d월은 %d일까지 있습니다. \n", month, cal.getMaxDaysOfMonth(month));
 		}
+		
+		System.out.println("Goodbye. Have a nice day!");
 		
 		scanner1.close();
 	}
