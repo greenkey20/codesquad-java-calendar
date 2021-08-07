@@ -2,7 +2,7 @@ package greendev.calendar;
 
 import java.util.Scanner;
 
-public class Calendar {
+public class Calendar_maxDays1 {
 	public static void main(String[] args) {
 		System.out.println("Hello, Calendar");
 		System.out.println("일  월  화 수  목 금  토");
